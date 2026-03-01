@@ -13,7 +13,8 @@ body {
     /* 読み書きしやすいシンプルなゴシック体。スマホの見やすさ最優先 */
     font-family: 'Noto Sans JP', "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
     color: #333333;
-    background-color: #f7f9f9; /* 完全な白より少し目に優しいグレー */
+    background-color: #f7f9f9;
+    /* 完全な白より少し目に優しいグレー */
     line-height: 1.8;
     font-size: 16px;
     -webkit-text-size-adjust: 100%;
@@ -23,18 +24,31 @@ body {
    レイアウト（スマホ最適化メイン）
 ========================================================================= */
 .article-container {
-    max-width: 600px; /* パソコンで見ても幅が広がりすぎないように固定 */
+    max-width: 600px;
+    /* パソコンで見ても幅が広がりすぎないように固定 */
     margin: 0 auto;
     background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* 個人ブログっぽいうっすらした影 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    /* 個人ブログっぽいうっすらした影 */
     min-height: 100vh;
 }
 
 /* =========================================================================
-   ヘッダー（タイトル周辺）
+   ヘッダー（PR表記・タイトル周辺）
 ========================================================================= */
+
+/* ステマ規制対応（PR表記） */
+.pr-tag {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #999999;
+    padding: 10px 0;
+    background-color: #ffffff;
+}
+
 .article-header {
-    background-color: #f0f5fa; /* 清潔感のある淡いブルー背景 */
+    background-color: #f0f5fa;
+    /* 清潔感のある淡いブルー背景 */
     padding: 40px 20px;
     text-align: left;
     border-bottom: 2px solid #e0e7ec;
@@ -71,7 +85,8 @@ body {
     font-size: 1.25rem;
     font-weight: 700;
     color: #2c3e50;
-    border-left: 4px solid #4a90e2; /* 青い縦線のアクセント */
+    border-left: 4px solid #4a90e2;
+    /* 青い縦線のアクセント */
     padding-left: 10px;
     margin-top: 10px;
     margin-bottom: 25px;
@@ -91,8 +106,10 @@ body {
 
 /* NGワードの強調ボックス */
 .highlight-box {
-    background-color: #fff9f9; /* 警告っぽいごく薄い赤 */
-    border-left: 4px solid #e74c3c; /* 赤い縦線 */
+    background-color: #fff9f9;
+    /* 警告っぽいごく薄い赤 */
+    border-left: 4px solid #e74c3c;
+    /* 赤い縦線 */
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 0 4px 4px 0;
@@ -140,7 +157,8 @@ body {
 }
 
 .reason-list strong {
-    color: #2980b9; /* リンク色と合わせた青 */
+    color: #2980b9;
+    /* リンク色と合わせた青 */
     display: block;
     font-size: 1.05rem;
     margin-bottom: 8px;
@@ -163,13 +181,15 @@ body {
     width: 100%;
     max-width: 320px;
     margin: 0 auto;
-    background-color: #06c755; /* LINEを連想させるグリーン（リーパスナースの強みに直結） */
+    background-color: #06c755;
+    /* LINEを連想させるグリーン（リーパスナースの強みに直結） */
     color: #ffffff;
     text-decoration: none;
     font-size: 1.15rem;
     font-weight: 700;
     padding: 18px 20px;
-    border-radius: 50px; /* 今風の丸ボタン */
+    border-radius: 50px;
+    /* 今風の丸ボタン */
     box-shadow: 0 4px 12px rgba(6, 199, 85, 0.3);
     transition: all 0.2s ease;
     letter-spacing: 0.05em;
