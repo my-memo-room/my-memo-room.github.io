@@ -37,34 +37,34 @@ body {
    ヘッダー（PR表記・タイトル周辺）
 ========================================================================= */
 
-/* ステマ規制対応（PR表記） */
+/* 스테マ規制対応（PR表記） */
 .pr-tag {
-    text-align: center;
+    text-align: left;
+    /* 中央から左端へ変更 */
     font-size: 0.75rem;
     color: #999999;
-    padding: 10px 0;
-    background-color: #ffffff;
+    padding: 10px 20px 5px;
+    /* 左端の揃えと、下側の無駄な余白をカット */
+    background-color: #f0f5fa;
+    /* ヘッダーと同じ背景色に馴染ませる */
 }
 
 .article-header {
     background-color: #f0f5fa;
     /* 清潔感のある淡いブルー背景 */
-    padding: 40px 20px;
+    padding: 15px 20px 30px;
+    /* 上側の無駄な余白をカットしてスッキリ */
     text-align: left;
     border-bottom: 2px solid #e0e7ec;
 }
 
-.article-date {
-    font-size: 0.85rem;
-    color: #777;
-    margin-bottom: 8px;
-}
-
 .article-header h1 {
-    font-size: 1.4rem;
+    font-size: 1.35rem;
+    /* 2行になった時の圧迫感を少し和らげる */
     font-weight: 700;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    line-height: 1.45;
+    /* 行間を少しスッキリさせる */
+    letter-spacing: 0.01em;
     color: #222;
 }
 
