@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+/* =========================================================================
+   ベース設定・リセット
+========================================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* 読み書きしやすいシンプルなゴシック体。スマホの見やすさ最優先 */
+    font-family: 'Noto Sans JP', "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    color: #333333;
+    background-color: #f7f9f9; /* 完全な白より少し目に優しいグレー */
+    line-height: 1.8;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* =========================================================================
+   レイアウト（スマホ最適化メイン）
+========================================================================= */
+.article-container {
+    max-width: 600px; /* パソコンで見ても幅が広がりすぎないように固定 */
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* 個人ブログっぽいうっすらした影 */
+    min-height: 100vh;
+}
+
+/* =========================================================================
+   ヘッダー（タイトル周辺）
+========================================================================= */
+.article-header {
+    background-color: #f0f5fa; /* 清潔感のある淡いブルー背景 */
+    padding: 40px 20px;
+    text-align: left;
+    border-bottom: 2px solid #e0e7ec;
+}
+
+.article-date {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.article-header h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #222;
+}
+
+/* =========================================================================
+   本文セクション
+========================================================================= */
+.content-section {
+    padding: 30px 20px;
+}
+
+.content-section p {
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.03em;
+}
+
+/* 中見出し（②〜④） */
+.content-section h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2c3e50;
+    border-left: 4px solid #4a90e2; /* 青い縦線のアクセント */
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+/* 各区切りの横線 */
+.divider {
+    border: none;
+    border-top: 1px dashed #cccccc;
+    margin: 10px 20px;
+}
+
+/* =========================================================================
+   装飾要素（NGワード、比較、リスト）
+========================================================================= */
+
+/* NGワードの強調ボックス */
+.highlight-box {
+    background-color: #fff9f9; /* 警告っぽいごく薄い赤 */
+    border-left: 4px solid #e74c3c; /* 赤い縦線 */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 0 4px 4px 0;
+}
+
+.word-title {
+    font-weight: 700;
+    color: #e74c3c;
+    margin-bottom: 5px !important;
+}
+
+.word-desc {
+    margin-bottom: 0 !important;
+    font-size: 0.95rem;
+}
+
+/* 病棟以外の選択肢（小見出し） */
+.choice-item {
+    margin-bottom: 25px;
+}
+
+.choice-item h3 {
+    font-size: 1.1rem;
+    color: #333;
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* 決め手（3つの理由）のリスト */
+.reason-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+
+.reason-list li {
+    margin-bottom: 25px;
+    background-color: #fdfdfd;
+    padding: 15px;
+    border: 1px solid #eeeeee;
+    border-radius: 6px;
+}
+
+.reason-list strong {
+    color: #2980b9; /* リンク色と合わせた青 */
+    display: block;
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #e6f3ff;
+    padding-bottom: 5px;
+}
+
+/* =========================================================================
+   CTA（ボタン）エリア
+========================================================================= */
+.cta-area {
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* リンクボタン */
+.cta-button {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    background-color: #06c755; /* LINEを連想させるグリーン（リーパスナースの強みに直結） */
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 700;
+    padding: 18px 20px;
+    border-radius: 50px; /* 今風の丸ボタン */
+    box-shadow: 0 4px 12px rgba(6, 199, 85, 0.3);
+    transition: all 0.2s ease;
+    letter-spacing: 0.05em;
+}
+
+/* クリック時のアニメーション（凹む） */
+.cta-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 6px rgba(6, 199, 85, 0.3);
+}
+
+.cta-note {
+    font-size: 0.8rem;
+    color: #888888;
+    margin-top: 12px !important;
+}
+
+/* =========================================================================
+   フッター
+========================================================================= */
+.article-footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #aaaaaa;
+    font-size: 0.8rem;
+}
